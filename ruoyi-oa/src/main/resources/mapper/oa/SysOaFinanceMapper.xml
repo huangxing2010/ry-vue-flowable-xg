@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.oa.mapper.SysOaFinanceMapper">
+
+    <resultMap type="com.ruoyi.oa.domain.SysOaFinance" id="SysOaFinanceResult">
+        <result property="financeId" column="finance_id"/>
+        <result property="projectId" column="project_id"/>
+        <result property="financeTitle" column="finance_title"/>
+        <result property="financeParties" column="finance_parties"/>
+        <result property="payType" column="pay_type"/>
+        <result property="financeType" column="finance_type"/>
+        <result property="financeTime" column="finance_time"/>
+        <result property="makeRatio" column="make_ratio"/>
+        <result property="makePrice" column="make_price"/>
+        <result property="makeTime" column="make_time"/>
+        <result property="makeExplain" column="make_explain"/>
+        <result property="accessory" column="accessory"/>
+        <result property="remark" column="finance_remark"/>
+        <result property="createBy" column="create_by"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateBy" column="update_by"/>
+        <result property="updateTime" column="update_time"/>
+        <association property="project" column="project_id" javaType="SysOaProject" resultMap="SysOaProjectResult"/>
+        <association property="detailList" javaType="java.util.List" resultMap="detailResult"/>
+    </resultMap>
+
+    <resultMap id="detailResult" type="SysOaDetail">
+        <id property="detailId" column="detail_id"/>
+        <result property="financeId" column="finance_id"/>
+        <result property="detailTitle" column="detail_title"/>
+        <result property="price" column="price"/>
+        <result property="bigPrice" column="big_price"/>
+        <result property="exitType" column="exit_type"/>
+        <result property="remark" column="detail_remark"/>
+    </resultMap>
+
+    <resultMap id="SysOaProjectResult" type="SysOaProject">
+        <result property="projectId" column="project_id"/>
+        <result property="projectName" column="project_name"/>
+    </resultMap>
+
+    <sql id="selectFinanceVo">
+        select a.finance_id,
+               a.project_id,
+               a.finance_title,
+               a.finance_parties,
+               a.pay_type,
+               a.finance_type,
+               a.finance_time,
+               a.make_ratio,
+               a.make_price,
+               a.make_time,
+               a.make_explain,
+               a.accessory,
+               a.remark as finance_remark,
+               a.create_by,
+               a.create_time,
+               a.update_by,
+               a.update_time,
+               b.detail_id,
+               b.detail_title,
+               b.price,
+               b.big_price,
+               b.remark as detail_remark
+        from sys_oa_finance a
+                 left join sys_oa_detail b on a.finance_id = b.finance_id
+    </sql>
+
+    <select id="selectPageFinanceList" resultMap="SysOaFinanceResult">
+        <include refid="selectFinanceVo" />
+            ${ew.getCustomSqlSegment}
+    </select>
+
+    <select id="selectFinanceList" resultMap="SysOaFinanceResult">
+        select a.finance_id, a.project_id, a.finance_title, a.finance_parties, a.pay_type, a.finance_type, a.finance_time, a.make_ratio, a.make_price, a.make_time, a.make_explain, a.accessory, a.remark as finance_remark, a.create_by, a.create_time, a.update_by, a.update_time,
+               b.detail_id, b.detail_title, b.price, b.big_price, b.remark as detail_remark,
+               p.project_id,p.project_name
+        from sys_oa_finance a
+                 left join sys_oa_detail b on a.finance_id = b.finance_id
+                 left join sys_oa_project p on a.project_id = p.project_id
+            ${ew.getCustomSqlSegment}
+    </select>
+
+    <select id="selectFinanceById" parameterType="Long" resultMap="SysOaFinanceResult">
+        select a.finance_id, a.project_id, a.finance_title, a.finance_parties, a.pay_type, a.finance_type, a.finance_time, a.make_ratio, a.make_price, a.make_time, a.make_explain,  a.accessory, a.remark as finance_remark, a.create_by, a.create_time, a.update_by, a.update_time,
+               b.detail_id, b.detail_title, b.price, b.big_price, b.remark as detail_remark,
+               p.project_id,p.project_name
+        from sys_oa_finance a
+                 left join sys_oa_detail b on a.finance_id = b.finance_id
+                 left join sys_oa_project p on a.project_id = p.project_id
+        where a.finance_id = #{financeId}
+    </select>
+    <!--进出账查询-->
+    <select id="selectFinanceByProjectId" resultMap="SysOaFinanceResult">
+        select a.finance_id, a.project_id, a.finance_title, a.finance_parties, a.pay_type, a.finance_type, a.finance_time, a.make_ratio, a.make_price, a.make_time, a.make_explain,  a.accessory, a.remark as finance_remark, a.create_by, a.create_time, a.update_by, a.update_time,
+               b.detail_id, b.detail_title, b.price, b.big_price, b.remark as detail_remark
+        from sys_oa_finance a
+                 left join sys_oa_detail b on a.finance_id = b.finance_id
+        where a.project_id = #{projectId} and a.finance_type = #{financeType}
+    </select>
+
+    <!--进出账查询-->
+    <select id="findFinanceByTime" resultMap="SysOaFinanceResult">
+        <include refid="selectFinanceVo" />
+        where a.finance_type = #{financeType}
+        and a.project_id = 0
+        and date_format(a.finance_time,'%Y-%m-%d %H:%i:%s') >= date_format(#{beginTime},'%Y-%m-%d %H:%i:%s')
+        and date_format(a.finance_time,'%Y-%m-%d %H:%i:%s') &lt;= date_format(#{endTime},'%Y-%m-%d %H:%i:%s')
+    </select>
+
+    <!--项目进出账查询-->
+  <!--  <select id="findFinanceByTimeAndProjectId" resultMap="SysOaFinanceResult">
+        <include refid="selectFinanceVo" />
+        where a.finance_type = #{financeType}
+        and a.project_id > 0
+        and date_format(a.create_time,'%Y-%m-%d %H:%i:%s') >= date_format(#{beginTime},'%Y-%m-%d %H:%i:%s')
+        and date_format(a.create_time,'%Y-%m-%d %H:%i:%s') &lt;= date_format(#{endTime},'%Y-%m-%d %H:%i:%s')
+    </select>-->
+
+</mapper>

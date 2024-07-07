@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.oa.mapper.SysOaProjectMapper">
+
+    <resultMap type="com.ruoyi.oa.domain.SysOaProject" id="SysOaProjectResult">
+        <result property="projectId" column="project_id"/>
+        <result property="projectName" column="project_name"/>
+        <result property="projectNum" column="project_num"/>
+        <result property="projectType" column="project_type"/>
+        <result property="address" column="address"/>
+        <result property="funds" column="funds"/>
+        <result property="functionary" column="functionary"/>
+        <result property="beginTime" column="begin_time"/>
+        <result property="finishTime" column="finish_time"/>
+        <result property="delivery" column="delivery"/>
+        <result property="guarantee" column="guarantee"/>
+        <result property="introduction" column="introduction"/>
+        <result property="projectGrade" column="project_grade"/>
+        <result property="projectStatus" column="project_status"/>
+        <result property="contractId" column="contract_id"/>
+        <result property="invoiceName" column="invoice_name"/>
+        <result property="invoiceNumber" column="invoice_number"/>
+        <result property="invoiceAddress" column="invoice_address"/>
+        <result property="invoiceBank" column="invoice_bank"/>
+        <result property="accessory" column="accessory"/>
+        <result property="bail" column="bail"/>
+        <result property="remark" column="remark"/>
+        <result property="createBy" column="create_by"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateBy" column="update_by"/>
+        <result property="updateTime" column="update_time"/>
+    </resultMap>
+
+
+
+</mapper>

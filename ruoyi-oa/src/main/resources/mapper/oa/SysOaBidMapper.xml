@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.oa.mapper.SysOaBidMapper">
+
+    <resultMap type="com.ruoyi.oa.domain.SysOaBid" id="SysOaBidResult">
+        <result property="bidId" column="bid_id"/>
+        <result property="bidTitle" column="bid_title"/>
+        <result property="bidNumber" column="bid_number"/>
+        <result property="bidType" column="bid_type"/>
+        <result property="budget" column="budget"/>
+        <result property="package" column="package"/>
+        <result property="noticeTime" column="notice_time"/>
+        <result property="deadline" column="deadline"/>
+        <result property="signType" column="sign_type"/>
+        <result property="getFile" column="get_file"/>
+        <result property="expirationTime" column="expiration_time"/>
+        <result property="bidAddress" column="bid_address"/>
+        <result property="clientName" column="client_name"/>
+        <result property="agency" column="agency"/>
+        <result property="document" column="document"/>
+        <result property="remark" column="remark"/>
+        <result property="accessory" column="accessory"/>
+        <result property="createBy" column="create_by"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateBy" column="update_by"/>
+        <result property="updateTime" column="update_time"/>
+    </resultMap>
+
+
+</mapper>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.oa.mapper.SysOaContractMapper">
+
+    <resultMap type="com.ruoyi.oa.domain.SysOaContract" id="SysOaContractResult">
+        <result property="contractId" column="contract_id"/>
+        <result property="processId" column="process_id"/>
+        <result property="contractNum" column="contract_num"/>
+        <result property="contractName" column="contract_name"/>
+        <result property="firstName" column="first_name"/>
+        <result property="firstPerson" column="first_person"/>
+        <result property="firstPhone" column="first_phone"/>
+        <result property="secondName" column="second_name"/>
+        <result property="secondPerson" column="second_person"/>
+        <result property="secondPhone" column="second_phone"/>
+        <result property="contractPrice" column="contract_price"/>
+        <result property="signTime" column="sign_time"/>
+        <result property="validity" column="validity"/>
+        <result property="contractStatus" column="contract_status"/>
+        <result property="accessory" column="accessory"/>
+        <result property="remark" column="remark"/>
+        <result property="createBy" column="create_by"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateBy" column="update_by"/>
+        <result property="updateTime" column="update_time"/>
+    </resultMap>
+
+
+</mapper>
