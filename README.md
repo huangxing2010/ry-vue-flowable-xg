@@ -1,6 +1,6 @@
 # 项目功能介绍
 * 本项目基于 ruoyi-flowable进行二次开发，工作流在此基础上增加了任务监听器；
-* 本项目适用于工程项目的投标、项目进度及成本控制用户，
+* 本项目适用于工程项目的投标、项目进度及成本控制用户；
 * 流程管理：流程发起、我的流程、待办任务、已办任务；
 * 流程部署：在原有基础上增加了任务监听器，根据部门 id 流转到该部门的主管审批；
 * 项目管理：项目信息的维护，重点功能是项目的流程进度控制，根据项目进度类型填写任务进度信息；
@@ -45,7 +45,7 @@ npm run dev
 > 执行：mvn clean package -D maven.test.skip=true -P dev
 
 * 生产环境
-> mvn clean package -D maven.test.skip=true -P prod
+> 执行：mvn clean package -D maven.test.skip=true -P prod
 
 # 在线演示
 * [在线演示](http://159.75.158.189/)
