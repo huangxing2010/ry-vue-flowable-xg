@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.oa.mapper.SysOaTaskMapper">
+
+    <resultMap type="com.ruoyi.oa.domain.SysOaTask" id="SysOaTaskResult">
+        <result property="taskId" column="task_id"/>
+        <result property="projectId" column="project_id"/>
+        <result property="taskTitle" column="task_title"/>
+        <result property="taskType" column="task_type"/>
+        <result property="taskGrade" column="task_grade"/>
+        <result property="collaborator" column="collaborator"/>
+        <result property="beginTime" column="begin_time"/>
+        <result property="finishTime" column="finish_time"/>
+        <result property="content" column="content"/>
+        <result property="accessory" column="accessory"/>
+        <result property="remark" column="remark"/>
+        <result property="createBy" column="create_by"/>
+        <result property="createTime" column="create_time"/>
+        <result property="updateBy" column="update_by"/>
+        <result property="updateTime" column="update_time"/>
+    </resultMap>
+
+
+
+    <!--先删除数据-->
+    <delete id="deleteSysOaTaskByProjectId" parameterType="Long">
+        delete from sys_oa_task where project_id = #{projectId}
+    </delete>
+
+
+</mapper>

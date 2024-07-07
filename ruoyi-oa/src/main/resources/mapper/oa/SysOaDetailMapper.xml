@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.ruoyi.oa.mapper.SysOaDetailMapper">
+
+    <resultMap type="com.ruoyi.oa.domain.SysOaDetail" id="SysOaDetailResult">
+        <result property="detailId" column="detail_id"/>
+        <result property="financeId" column="finance_id"/>
+        <result property="detailTitle" column="detail_title"/>
+        <result property="price" column="price"/>
+        <result property="bigPrice" column="big_price"/>
+        <result property="remark" column="remark"/>
+    </resultMap>
+
+     <!--先删除数据-->
+    <delete id="deleteSysOaDetailByfinanceId" parameterType="Long">
+        delete from sys_oa_detail where finance_id = #{financeId}
+    </delete>
+
+    <!--再添加数据-->
+    <insert id="batchSysOaDetail">
+        insert into sys_oa_detail( detail_id, finance_id, detail_title, price, big_price, remark, create_by, create_time, update_by, update_time) values
+        <foreach item="item" index="index" collection="list" separator=",">
+            ( #{item.detailId}, #{item.financeId}, #{item.detailTitle}, #{item.price},#{item.bigPrice}, #{item.remark}, #{item.createBy}, #{item.createTime}, #{item.updateBy}, #{item.updateTime})
+        </foreach>
+    </insert>
+
+
+
+</mapper>
