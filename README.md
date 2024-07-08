@@ -62,7 +62,9 @@ npm run dev
 # 项目支出
 * 如果项目对您有帮助，请给项目点个 star，也可以通过下方二维码请作者喝杯咖啡！
 
-## 演示图
+# 演示图
+
+* [演示图预览若不能查看请移步星哥博客](http://blog.xg.xnqys.cn/articles/1)
 
 <table>
     <tr>
