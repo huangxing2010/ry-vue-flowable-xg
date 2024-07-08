@@ -48,18 +48,51 @@ npm run dev
 > 执行：mvn clean package -D maven.test.skip=true -P prod
 
 # 在线演示
-* [在线演示](http://159.75.158.189/)
+* [在线演示（敬请期待...）](http://blog.xg.xnqys.cn/)
 > 演示服务不限制CURD操作，希望大家按需使用，不要恶意添加脏数据或对服务器进行攻击等操作。（将不定期清理数据）
 
 
 
 # 特别鸣谢
+* RuoYi-Vue
 * RuoYi-Vue-Plus
 * RuoYi-flowable
 * bpmn-process-designer
 
 # 项目支出
 * 如果项目对您有帮助，请给项目点个 star，也可以通过下方二维码请作者喝杯咖啡！
+
+## 演示图
+
+<table>
+    <tr>
+        <td><img src="http://blog.xg.xnqys.cn/uploads/article/20240708/TDnmfw8bYEbLK4CcNU5pX1vzCeIFjI2qFlOpcSD7.png"/></td>
+        <td><img src="http://blog.xg.xnqys.cn/uploads/article/20240708/iew2WwgeEwjGGXyZ7s78exrlVrFMMjj5Hl12Ot9i.png"/></td>
+    </tr>
+<tr>
+        <td><img src="http://blog.xg.xnqys.cn/uploads/article/20240708/JDvb6WOlFwBMMSQdCa0cBemn3Tcnwe01Dunx7dCL.png"/></td>
+        <td><img src="http://blog.xg.xnqys.cn/uploads/article/20240708/ij23RIfrs6pSJWO6fiJAGGqJlck2gWfNLaaHys80.png"/></td>
+    </tr>
+<tr>
+        <td><img src="http://blog.xg.xnqys.cn/uploads/article/20240708/GeH0tKrwuq9PGsPeUYUf8LDTTDsOYeQzsBMz52hM.png"/></td>
+        <td><img src="http://blog.xg.xnqys.cn/uploads/article/20240708/clpWUR8NjnrlUA2HJiy5I0zU9NhJO4NT5CLHHRIi.png"/></td>
+    </tr>
+
+<tr>
+        <td><img src="http://blog.xg.xnqys.cn/uploads/article/20240708/sR61bVSsfhQqXwqTS1SamQFlw8HxQ33jnzrdBM1k.png"/></td>
+        <td><img src="http://blog.xg.xnqys.cn/uploads/article/20240708/KDeLiZa2OBa7P6bzpFRZG9QfWWUYiQNasfVa1rEz.png"/></td>
+    </tr>
+<tr>
+        <td><img src="http://blog.xg.xnqys.cn/uploads/article/20240708/KDeLiZa2OBa7P6bzpFRZG9QfWWUYiQNasfVa1rEz.png"/></td>
+        <td><img src="http://blog.xg.xnqys.cn/uploads/article/20240708/GxulvV7aQ0kcLR1t71WqfXwjNBZb0K71EwKfe78s.png"/></td>
+    </tr>
+<tr>
+        <td><img src="http://blog.xg.xnqys.cn/uploads/article/20240708/VMED3fUlTfADB5G6ZdBCKhba3P5flIeyvM20FfHF.png"/></td>
+        <td><img src="http://blog.xg.xnqys.cn/uploads/article/20240708/QW89XgExSXo4zQaKM0BAR0kQH6WiYxrClFFOHMYN.png"/></td>
+    </tr>
+   
+</table>
+
 
 # 版权声明
 * 采用MIT开源协议，完全免费给个人及企业使用。
