@@ -74,7 +74,7 @@
     <el-table v-loading="loading" :data="ownProcessList" @selection-change="handleSelectionChange">
       <el-table-column type="selection" width="55" align="center" />
 <!--      <el-table-column label="流程编号" align="center" prop="procInsId" :show-overflow-tooltip="true"/>-->
-      <el-table-column label="流程标题" align="left" prop="procVars.description" />
+      <el-table-column label="流程标题" align="left" prop="procVars" />
       <el-table-column label="流程名称" align="left" prop="procDefName" :show-overflow-tooltip="true"/>
 <!--      <el-table-column label="流程类别" align="center" prop="category" :formatter="categoryFormat" />-->
       <el-table-column label="流程版本" align="center" width="80px">
