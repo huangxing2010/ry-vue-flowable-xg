@@ -206,16 +206,11 @@ export default {
       this.loading = true;
       listOwnProcess(this.addDateRange(this.queryParams, this.dateRange)).then(response => {
         // console.log(5555,response.rows)
-        // this.ownProcessList = response.rows;
-        if(this.queryParams.description != null){
-          this.ownProcessList = this.searchList(response.rows, this.queryParams.description);
-        }else {
-          this.ownProcessList =response.rows;
-        }
+        this.ownProcessList = response.rows;
         this.total = response.total;
         this.loading = false;
       }).catch((err) => {
-        console.log(4444,err)
+        // console.log(4444,err)
       });
     },
 

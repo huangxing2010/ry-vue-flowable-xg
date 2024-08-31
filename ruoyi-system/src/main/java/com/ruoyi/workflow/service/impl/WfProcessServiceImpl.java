@@ -216,19 +216,14 @@ public class WfProcessServiceImpl extends FlowServiceFactory implements IWfProce
             // 查询任务节点参数，并转换成Map，目的是获取流程标题(新增于2024年2月29日)
             List<HistoricVariableInstance> collectors = historyService.createHistoricVariableInstanceQuery().processInstanceId(hisIns.getId()).list();
             if(CollUtil.isNotEmpty(collectors)){
-                taskVo.setProcVars(collectors.stream().collect(Collectors.toMap(HistoricVariableInstance::getVariableName, HistoricVariableInstance::getValue)));
+//                taskVo.setProcVars(collectors.stream().collect(Collectors.toMap(HistoricVariableInstance::getVariableName, HistoricVariableInstance::getValue)));
+                // 遍历表单属性并获取值
+                collectors.stream().forEach(historicVariableInstance -> {
+                    if (historicVariableInstance.getVariableName().equals("description")) {
+                        taskVo.setProcVars(historicVariableInstance.getValue());
+                    }
+                });
             }
-           /* Map<String, Object> collectors = historyService.createHistoricVariableInstanceQuery()
-                    .processInstanceId(hisIns.getId())
-                    .list()
-                    .stream()
-                    .collect(Collectors.toMap(HistoricVariableInstance::getVariableName, HistoricVariableInstance::getValue));
-            taskVo.setProcVars(collectors);*/
-           /* List<HistoricVariableInstance> list = historyService.createHistoricVariableInstanceQuery()
-                    .processInstanceId(hisIns.getId())
-                    .list();
-            taskVo.setProcVars(list);*/
-
             taskVoList.add(taskVo);
         }
         page.setRecords(taskVoList);
