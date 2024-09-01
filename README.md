@@ -48,10 +48,46 @@ npm run dev
 > 执行：mvn clean package -D maven.test.skip=true -P prod
 
 # 在线演示
-* [在线演示（敬请期待...）](http://blog.xg.xnqys.cn/)
+* [在线演示：item.oa.system-code.vip](http://item.oa.system-code.vip)
 > 演示服务不限制CURD操作，希望大家按需使用，不要恶意添加脏数据或对服务器进行攻击等操作。（将不定期清理数据）
 
-
+<table>
+ <tr>
+<td>用户名</td>
+<td>密码</td>
+<td>角色</td>
+</tr>
+<tr>
+<td>boss</td>
+<td>123456</td>
+<td>总经理</td>
+</tr>
+<tr>
+<td>zzj</td>
+<td>123456</td>
+<td>行政总监</td>
+</tr>
+<tr>
+<td>lwy</td>
+<td>123456</td>
+<td>行政文员</td>
+</tr>
+<tr>
+<td>hzj</td>
+<td>123456</td>
+<td>工程总监</td>
+</tr>
+<tr>
+<td>hg</td>
+<td>123456</td>
+<td>工程师</td>
+</tr>
+<tr>
+<td>pbwyh</td>
+<td>123456</td>
+<td>评标委员会</td>
+</tr>
+</table>
 
 # 特别鸣谢
 * RuoYi-Vue
@@ -64,34 +100,29 @@ npm run dev
 
 # 演示图
 
-* [演示图预览若不能查看请移步星哥博客](http://blog.xg.xnqys.cn/articles/1)
-
 <table>
     <tr>
-        <td><img src="http://blog.xg.xnqys.cn/uploads/article/20240708/TDnmfw8bYEbLK4CcNU5pX1vzCeIFjI2qFlOpcSD7.png"/></td>
-        <td><img src="http://blog.xg.xnqys.cn/uploads/article/20240708/iew2WwgeEwjGGXyZ7s78exrlVrFMMjj5Hl12Ot9i.png"/></td>
+        <td><img src="https://oscimg.oschina.net/oscnet/up-6833234c2f34ca3350f46615a1d520299c1.png"/></td>
+        <td><img src="https://oscimg.oschina.net/oscnet/up-8a9abf3099b0af576969f3bfa366d5bb097.png"/></td>
     </tr>
 <tr>
-        <td><img src="http://blog.xg.xnqys.cn/uploads/article/20240708/JDvb6WOlFwBMMSQdCa0cBemn3Tcnwe01Dunx7dCL.png"/></td>
-        <td><img src="http://blog.xg.xnqys.cn/uploads/article/20240708/ij23RIfrs6pSJWO6fiJAGGqJlck2gWfNLaaHys80.png"/></td>
+        <td><img src="https://oscimg.oschina.net/oscnet/up-95ce7c1fb2da53363731717d81a6bd67855.png"/></td>
+        <td><img src="https://oscimg.oschina.net/oscnet/up-eb22214324b947291865d1c838e7b6884b8.png"/></td>
     </tr>
 <tr>
-        <td><img src="http://blog.xg.xnqys.cn/uploads/article/20240708/GeH0tKrwuq9PGsPeUYUf8LDTTDsOYeQzsBMz52hM.png"/></td>
-        <td><img src="http://blog.xg.xnqys.cn/uploads/article/20240708/clpWUR8NjnrlUA2HJiy5I0zU9NhJO4NT5CLHHRIi.png"/></td>
+        <td><img src="https://oscimg.oschina.net/oscnet/up-f13cd5c2018bd08aade6012780f94f194ad.png"/></td>
+        <td><img src="https://oscimg.oschina.net/oscnet/up-6c4cf60a4eb72086aca662782f28464ca77.png"/></td>
     </tr>
 
 <tr>
-        <td><img src="http://blog.xg.xnqys.cn/uploads/article/20240708/sR61bVSsfhQqXwqTS1SamQFlw8HxQ33jnzrdBM1k.png"/></td>
-        <td><img src="http://blog.xg.xnqys.cn/uploads/article/20240708/KDeLiZa2OBa7P6bzpFRZG9QfWWUYiQNasfVa1rEz.png"/></td>
+        <td><img src="https://oscimg.oschina.net/oscnet/up-47a21c0231ded25461d170d84f49d6f2b3d.png"/></td>
+        <td><img src="https://oscimg.oschina.net/oscnet/up-00d2f1ec7ef77592b3ca0cd96aaba0cb770.png"/></td>
     </tr>
 <tr>
-        <td><img src="http://blog.xg.xnqys.cn/uploads/article/20240708/KDeLiZa2OBa7P6bzpFRZG9QfWWUYiQNasfVa1rEz.png"/></td>
-        <td><img src="http://blog.xg.xnqys.cn/uploads/article/20240708/GxulvV7aQ0kcLR1t71WqfXwjNBZb0K71EwKfe78s.png"/></td>
+        <td><img src="https://oscimg.oschina.net/oscnet/up-e91e58070106cdbfb999ba7af6305ae5c0a.png"/></td>
+        <td><img src="https://oscimg.oschina.net/oscnet/up-cf034ac32a683b111e9eab1860674455bd9.png"/></td>
     </tr>
-<tr>
-        <td><img src="http://blog.xg.xnqys.cn/uploads/article/20240708/VMED3fUlTfADB5G6ZdBCKhba3P5flIeyvM20FfHF.png"/></td>
-        <td><img src="http://blog.xg.xnqys.cn/uploads/article/20240708/QW89XgExSXo4zQaKM0BAR0kQH6WiYxrClFFOHMYN.png"/></td>
-    </tr>
+
    
 </table>
 
