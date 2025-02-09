@@ -1,4 +1,27 @@
+<p align="center">
+	<img alt="logo" src="https://gitee.com/xnqysabout/oa-flow-pms/raw/master/doc/logo.jpg">
+</p>
 
+<h1 align="center" style="margin: 30px 0 30px; font-weight: bold;">工程项目管理系统</h1>
+<h4 align="center">基于若依框架ruoyi-flowable-plus开发，SpringBoot+Vue前后端分离</h4>
+
+
+<p align="center" style="margin-top: 50px;">
+   <a href="https://gitee.com/xnqysabout/oa-flow-pms">
+	  <img alt="开源版" src="https://gitee.com/xnqysabout/oa-flow-pms/raw/master/doc/images/btn02.png">
+    </a>
+    <a href="https://gitee.com/xnqysabout/ry-vue-flowable-xg">
+	  <img alt="旗舰版" src="https://gitee.com/xnqysabout/oa-flow-pms/raw/master/doc/images/btn01.png">
+    </a>
+</p>
+
+# 旗舰版功能对比
+* 旗舰版请移步：[工程项目管理系统V2.0-NEW](https://gitee.com/xnqysabout/oa-flow-pms)
+
+# 功能对比
+<p align="center">
+	  <img alt="" src="https://gitee.com/xnqysabout/oa-flow-pms/raw/master/doc/images/contrast.png">
+</p>
 
 # 项目功能介绍
 * 于若依管理系统 ruoyi-flowable-plus进行二次开发，基于Spring Boot、Mybatis-plus、Vue和ElementUI技术栈。
@@ -14,12 +37,7 @@
 * 知识库等：普通分类文章信息；
 * oss云存储，请自行配置；
 
-# 旗舰版功能对比
-* 旗舰版请移步：[工程项目管理系统V2.0-NEW](https://gitee.com/xnqysabout/oa-flow-pms)
-* 功能对比
-<p align="center">
-	  <img alt="开源版" src="https://gitee.com/xnqysabout/oa-flow-pms/raw/master/doc/images/contrast.png">
-</p>
+
 
 # 安装步骤
 ## 后端安装配置
