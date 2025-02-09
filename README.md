@@ -24,7 +24,7 @@
 </p>
 
 # 项目功能介绍
-* 于若依管理系统 ruoyi-flowable-plus进行二次开发，基于Spring Boot、Mybatis-plus、Vue和ElementUI技术栈。
+* 基于若依管理系统 ruoyi-flowable-plus进行二次开发，基于Spring Boot、Mybatis-plus、Vue和ElementUI技术栈。
 * 工程项目管理系统适用于工程项目的投标管理及项目进度及成本控制用户的OA办公系统；
 * 流程管理：流程发起、我的流程、待办任务、已办任务；
 * 流程部署：在原有基础上增加了任务监听器，根据部门 id 流转到该部门的主管审批；
