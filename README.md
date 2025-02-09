@@ -1,3 +1,5 @@
+
+
 # 项目功能介绍
 * 于若依管理系统 ruoyi-flowable-plus进行二次开发，基于Spring Boot、Mybatis-plus、Vue和ElementUI技术栈。
 * 工程项目管理系统适用于工程项目的投标管理及项目进度及成本控制用户的OA办公系统；
@@ -12,11 +14,12 @@
 * 知识库等：普通分类文章信息；
 * oss云存储，请自行配置；
 
-
-
-
-
-
+# 旗舰版功能对比
+* 旗舰版请移步：[工程项目管理系统V2.0-NEW](https://gitee.com/xnqysabout/oa-flow-pms)
+* 功能对比
+<p align="center">
+	  <img alt="开源版" src="https://gitee.com/xnqysabout/oa-flow-pms/raw/master/doc/images/contrast.png">
+</p>
 
 # 安装步骤
 ## 后端安装配置
