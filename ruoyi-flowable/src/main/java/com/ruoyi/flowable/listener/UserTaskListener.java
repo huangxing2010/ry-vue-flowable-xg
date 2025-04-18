@@ -22,9 +22,6 @@ public class UserTaskListener implements TaskListener {
     public void notify(DelegateTask delegateTask) {
         //TODO 实现你的任务监听器逻辑
         System.out.println("执行任务监听器...");
-
-
-
     }
 
 }
