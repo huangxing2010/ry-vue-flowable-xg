@@ -37,7 +37,9 @@
 * 知识库等：普通分类文章信息；
 * oss云存储，请自行配置；
 
-
+# 仓库地址
+* GitHub [https://github.com/huangxing2010/ry-vue-flowable-xg](https://github.com/huangxing2010/ry-vue-flowable-xg)
+* Gitee [https://gitee.com/xnqysabout/ry-vue-flowable-xg](https://gitee.com/xnqysabout/ry-vue-flowable-xg)
 
 # 安装步骤
 ## 后端安装配置
