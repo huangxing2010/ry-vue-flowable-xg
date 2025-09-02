@@ -40,7 +40,6 @@ public class TestDemoServiceImpl implements ITestDemoService {
     public TableDataInfo<TestDemoVo> queryPageList(TestDemoBo bo, PageQuery pageQuery) {
         LambdaQueryWrapper<TestDemo> lqw = buildQueryWrapper(bo);
         Page<TestDemoVo> result = baseMapper.selectVoPage(pageQuery.build(), lqw);
-
         return TableDataInfo.build(result);
     }
 

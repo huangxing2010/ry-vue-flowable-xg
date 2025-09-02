@@ -22,8 +22,6 @@
             <artifactId>ruoyi-common</artifactId>
         </dependency>
 
-
-
         <dependency>
             <groupId>org.flowable</groupId>
             <artifactId>flowable-spring-boot-starter-process</artifactId>
@@ -34,7 +32,6 @@
             <artifactId>aviator</artifactId>
             <version>5.3.1</version>
         </dependency>
-
 
     </dependencies>
 </project>

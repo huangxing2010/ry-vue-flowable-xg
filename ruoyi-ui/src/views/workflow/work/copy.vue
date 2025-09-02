@@ -188,6 +188,7 @@ export default {
     },
     /** 查看详情 */
     handleFlowRecord(row){
+      console.log(row);
       this.$router.push({
         path: '/workflow/process/detail/' + row.instanceId,
         query: {
