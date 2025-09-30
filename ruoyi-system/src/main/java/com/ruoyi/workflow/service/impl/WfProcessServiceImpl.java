@@ -616,8 +616,7 @@ public class WfProcessServiceImpl extends FlowServiceFactory implements IWfProce
     @Transactional(rollbackFor = Exception.class)
     public void startProcessByDefId(String procDefId, Map<String, Object> variables) {
         try {
-            ProcessDefinition processDefinition = repositoryService.createProcessDefinitionQuery()
-                .processDefinitionId(procDefId).singleResult();
+            ProcessDefinition processDefinition = repositoryService.createProcessDefinitionQuery().processDefinitionId(procDefId).singleResult();
             startProcess(processDefinition, variables);
         } catch (Exception e) {
             e.printStackTrace();

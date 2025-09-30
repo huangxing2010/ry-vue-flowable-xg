@@ -127,11 +127,9 @@
         </el-card>
       </el-tab-pane>
 
-      <el-tab-pane label="流程跟踪" name="track">
+      <el-tab-pane label="流程跟踪2" name="track">
         <el-card class="box-card" shadow="never">
-          <process-viewer :key="`designer-${loadIndex}`" :style="'height:' + height" :xml="xmlData"
-                          :finishedInfo="finishedInfo" :allCommentList="historyProcNodeList"
-          />
+          <process-viewer :key="`designer-${loadIndex}`" :style="'height:' + height" :xml="xmlData" :finishedInfo="finishedInfo" :allCommentList="historyProcNodeList" />
         </el-card>
       </el-tab-pane>
 
@@ -438,6 +436,7 @@ export default {
     getProcessDetails(procInsId, taskId) {
       const params = {procInsId: procInsId, taskId: taskId}
       detailProcess(params).then(res => {
+        console.log(22223, res)
         const data = res.data;
         this.xmlData = data.bpmnXml;
         this.processFormList = data.processFormList;
