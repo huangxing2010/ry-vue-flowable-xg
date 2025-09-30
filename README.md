@@ -2,7 +2,7 @@
 	<img alt="logo" src="https://gitee.com/xnqysabout/oa-flow-pms/raw/master/doc/logo.jpg">
 </p>
 
-<h1 align="center" style="margin: 30px 0 30px; font-weight: bold;">工程项目管理系统</h1>
+<h1 align="center" style="margin: 30px 0 30px; font-weight: bold;">工程投标项目管理办公系统V1.0</h1>
 <h4 align="center">基于若依框架ruoyi-flowable-plus开发，SpringBoot+Vue前后端分离</h4>
 
 
@@ -16,7 +16,7 @@
 </p>
 
 # 新版发布
-* 旗舰版请移步：[工程项目管理系统V2.0-NEW](https://gitee.com/xnqysabout/oa-flow-pms)
+* 旗舰版请移步：[工程项目管理系统V2.0.1](https://gitee.com/xnqysabout/oa-flow-pms)
 
 # 功能对比
 <p align="center">
