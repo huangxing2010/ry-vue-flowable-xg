@@ -16,7 +16,7 @@
 </p>
 
 # 新版发布
-* 旗舰版请移步：[工程项目管理系统V2.0.1](https://gitee.com/xnqysabout/oa-flow-pms)
+* 旗舰版请移步：[工程项目管理系统V2.0.2](https://gitee.com/xnqysabout/oa-flow-pms)
 
 # 功能对比
 <p align="center">
