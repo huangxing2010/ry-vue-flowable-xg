@@ -41,6 +41,9 @@
 * GitHub [https://github.com/huangxing2010/ry-vue-flowable-xg](https://github.com/huangxing2010/ry-vue-flowable-xg)
 * Gitee [https://gitee.com/xnqysabout/ry-vue-flowable-xg](https://gitee.com/xnqysabout/ry-vue-flowable-xg)
 
+# 技术文档
+* 文档地址： [http://item.doc.xnqys.cn/guide/](http://item.doc.xnqys.cn/guide/)
+
 # 安装步骤
 ## 后端安装配置
 * 1、git 源码；
