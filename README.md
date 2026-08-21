@@ -2,21 +2,25 @@
 	<img alt="logo" src="https://gitee.com/xnqysabout/oa-flow-pms/raw/master/doc/logo.jpg">
 </p>
 
-<h1 align="center" style="margin: 30px 0 30px; font-weight: bold;">工程投标项目管理办公系统V1.0</h1>
+<h1 align="center" style="margin: 30px 0 30px; font-weight: bold;">工程投标项目管理办公系统V1.1</h1>
 <h4 align="center">基于若依框架ruoyi-flowable-plus开发，SpringBoot+Vue前后端分离</h4>
 
 
 <p align="center" style="margin-top: 50px;">
    <a href="https://gitee.com/xnqysabout/oa-flow-pms">
-	  <img alt="开源版" src="https://gitee.com/xnqysabout/oa-flow-pms/raw/master/doc/images/btn02.png">
-    </a>
+	  <img alt="开源版" src="https://gitee.com/xnqysabout/oa-flow-pms/raw/master/doc/images/btn02.png" width="72px" height="24px" >
+    </a> 
     <a href="https://gitee.com/xnqysabout/ry-vue-flowable-xg">
-	  <img alt="旗舰版" src="https://gitee.com/xnqysabout/oa-flow-pms/raw/master/doc/images/btn01.png">
+	  <img alt="旗舰版" src="https://gitee.com/xnqysabout/oa-flow-pms/raw/master/doc/images/btn01.png" width="72px" height="24px">
+    </a>
+    <a href="http://item.doc.xnqys.cn/saas">
+	  <img alt="SAAS版" src="https://gitee.com/xnqysabout/oa-flow-pms/raw/master/doc/images/btn03.png" width="72px" height="24px">
     </a>
 </p>
 
 # 新版发布
-* 旗舰版请移步：[工程项目管理系统V2.0.2](https://gitee.com/xnqysabout/oa-flow-pms)
+* 旗舰版请移步：[工程项目管理系统V2.0.3](https://gitee.com/xnqysabout/oa-flow-pms)
+* SAAS版：开发中...
 
 # 功能对比
 <p align="center">
