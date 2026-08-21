@@ -183,8 +183,6 @@ export default {
     getList() {
       getCache().then((response) => {
         this.cache = response.data;
-        this.$modal.closeLoading();
-
       });
     },
     /** 查询公告列表 */

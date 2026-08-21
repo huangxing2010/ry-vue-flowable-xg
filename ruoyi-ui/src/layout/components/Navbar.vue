@@ -11,6 +11,12 @@
 
         <search id="header-search" class="right-menu-item" />
 
+        <el-tooltip content="公司官网" effect="dark" placement="bottom">
+          <a class="right-menu-item hover-effect" href="http://www.deercoding.com.cn" target="_blank" rel="noopener noreferrer">
+            <svg-icon icon-class="link" />
+          </a>
+        </el-tooltip>
+
 <!--        <el-tooltip content="源码地址" effect="dark" placement="bottom">
           <ruo-yi-git id="ruoyi-git" class="right-menu-item hover-effect" />
         </el-tooltip>

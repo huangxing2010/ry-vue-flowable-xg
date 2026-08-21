@@ -90,7 +90,7 @@ public class OssClient {
             client.createBucket(createBucketRequest);
             client.setBucketPolicy(bucketName, getPolicy(bucketName, accessPolicy.getPolicyType()));
         } catch (Exception e) {
-            throw new OssException("创建Bucket失败, 请核对配置信息:[" + e.getMessage() + "]");
+            throw new OssException("请在系统管理->文件管理中设置oss参数");
         }
     }
 
