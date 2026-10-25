@@ -46,6 +46,4 @@ nbdist/
 !*/build/*.html
 !*/build/*.xml
 dist.zip
-application-dev.yml
-application-prod.yml
 yunwei.md
